@@ -11,10 +11,15 @@ eureka:
 microservice:
   movement-service:
     endpoints:
-      endpoint:
+      endpoint1:
         uri: http://MOVEMENT-SERVICE/movement/{id}
-  
+      endpoint2:
+        uri: http://MOVEMENT-SERVICE/movement
   customer-service:
     endpoints:
-      endpoint:
+      endpoint1:
+        uri: http://CUSTOMER-SERVICE/customer/personal/{dni}
+      endpoint2:
         uri: http://CUSTOMER-SERVICE/customer/personal
+      endpoint3:
+        uri: http://CUSTOMER-SERVICE/customer/business
