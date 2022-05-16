@@ -9,7 +9,7 @@ eureka:
   
   
 microservice:
-  payment-service:
+  movement-service:
     endpoints:
       endpoint:
         uri: http://MOVEMENT-SERVICE/movement/{id}
