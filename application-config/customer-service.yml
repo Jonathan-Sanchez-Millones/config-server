@@ -1,0 +1,22 @@
+server:
+  port: 9293
+  
+spring:
+    application:
+      name: customer-service
+    data:
+      mongodb:
+        database: Customerdb
+        host: mongo
+        port: 27017
+  
+    cloud:
+      config:
+        enable: true
+        uri: http://config-server:9196
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://service-eureka:8761/eureka/        
